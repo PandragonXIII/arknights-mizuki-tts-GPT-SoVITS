@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.log
+weight.json
+nohup.out
+GPT-SoVITS/GPT_SoVITS/configs/tts_infer.yaml.bak

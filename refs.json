@@ -1,0 +1,44 @@
+{
+  "ref_high": {
+    "file": "refs/ref_high.wav",
+    "source": "CN_030",
+    "text": "さあ、悪人の数を減らせたね。全部ドクターのおかげだよ。",
+    "f0_median_hz": 317,
+    "usage": "高音/默认参考音，通用"
+  },
+  "ref_low": {
+    "file": "refs/ref_low.wav",
+    "source": "CN_001 (0-7.5s剪辑)",
+    "text": "ケルシー先生が言ってたよ。ドクターが僕をそばに置くようになったら、それは僕を守ることを決めたんだって。",
+    "f0_median_hz": 211,
+    "usage": "低音参考音，沉稳叙述"
+  },
+  "ref_happy": {
+    "file": "refs/ref_happy.wav",
+    "source": "CN_013",
+    "text": "認められたの？これからはドクターともっといろんな場所に行って悪人を片付けていいってこと？",
+    "f0_median_hz": 251,
+    "usage": "开心/兴奋情绪"
+  },
+  "ref_sad": {
+    "file": "refs/ref_sad.wav",
+    "source": "CN_014 (0-8.5s剪辑)",
+    "text": "あの時もこんな雨の日だったなぁ。予想外の贈り物を受け取って僕は変わったんだ。",
+    "f0_median_hz": 234,
+    "usage": "低落/忧郁情绪"
+  },
+  "ref_surprise": {
+    "file": "refs/ref_surprise.wav",
+    "source": "CN_031",
+    "text": "え？ドクター、何人か逃してるよ。僕が代わりに片付けてくるね。",
+    "f0_median_hz": 268,
+    "usage": "惊讶情绪"
+  },
+  "ref_neutral": {
+    "file": "refs/ref_neutral.wav",
+    "source": "CN_032",
+    "text": "みんなの撤退を援護するなら手はあるよ。いや、援護するだけじゃダメだ。ここで悪人を全員始末しながら。",
+    "f0_median_hz": 229,
+    "usage": "中性/战斗语气"
+  }
+}
