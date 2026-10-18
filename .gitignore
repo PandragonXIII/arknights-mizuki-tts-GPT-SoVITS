@@ -6,3 +6,12 @@ venv/
 weight.json
 nohup.out
 GPT-SoVITS/GPT_SoVITS/configs/tts_infer.yaml.bak
+
+# Downloaded model weights and generated model caches
+GPT-SoVITS/GPT_weights_v4/*.ckpt
+GPT-SoVITS/SoVITS_weights_v4/*.pth
+GPT-SoVITS/GPT_SoVITS/pretrained_models/
+GPT-SoVITS/GPT_SoVITS/text/G2PWModel/g2pW.onnx
+GPT-SoVITS/GPT_SoVITS/text/G2PWModel_1.1.zip
+GPT-SoVITS/GPT_SoVITS/text/g2pw/*.pickle
+GPT-SoVITS/GPT_SoVITS/text/*cache.pickle

@@ -16,12 +16,20 @@ mizuki-tts/
 ├── client_example.py       # 调用示例（无第三方依赖）
 ├── refs.json               # 参考音说明（文本/音高/用途）
 ├── refs/                   # 6 个参考音（3~10 秒）
-└── GPT-SoVITS/             # 精简后的 GPT-SoVITS 源码 + 模型
+└── GPT-SoVITS/             # 精简后的 GPT-SoVITS 源码
     ├── api_v2.py           # FastAPI 服务入口
-    ├── GPT_weights_v4/mizuki_v4-e20.ckpt        # 微调 GPT 模型
-    ├── SoVITS_weights_v4/mizuki_v4_e8_s136_l32.pth  # 微调 SoVITS LoRA
-    └── GPT_SoVITS/pretrained_models/           # 底模/声码器/BERT 等
+    └── GPT_SoVITS/pretrained_models/           # 下载后存放底模/声码器/BERT 等
 ```
+
+## 下载模型
+
+模型权重未纳入 Git。运行前执行以下命令下载微调权重和推理所需底模（约 2 GB）：
+
+```bash
+bash download_models.sh
+```
+
+微调 GPT/SoVITS 权重从本项目 [GitHub Releases](https://github.com/PandragonXIII/arknights-mizuki-tts-GPT-SoVITS/releases) 下载。若 Release 尚未上传 `mizuki_v4-e20.ckpt` 和 `mizuki_v4_e8_s136_l32.pth`，请联系维护者补齐发布资源。底模来自 [GPT-SoVITS 官方仓库](https://github.com/RVC-Boss/GPT-SoVITS)及其公开模型源；下载脚本会将文件放回推理配置所需路径。
 
 ## 安装
 
@@ -41,6 +49,8 @@ pip install -r requirements.txt
 > transformers 必须用 4.51.3（与 torch 2.5.1 兼容，更高版本会报 `_dynamo` 相关错误）。
 
 ## 启动服务
+
+首次启动前确保已按上文下载模型。
 
 ```bash
 bash start_api.sh                    # 默认 GPU 0、端口 9880
